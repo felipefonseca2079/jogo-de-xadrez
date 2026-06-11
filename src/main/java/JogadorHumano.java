@@ -9,6 +9,16 @@ public abstract class Jogador {
         return this.nome;
     }
 
-    // Método abstrato que as subclasses serão obrigadas a implementar
+
     public abstract void jogar();
+}
+public class JogadorHumano extends Jogador {
+    public JogadorHumano(String nome) {
+        super(nome);
+    }
+
+    @Override
+    public void jogar() {
+        System.out.println("Jogador Humano (" + getNome() + ") fez sua jogada no tabuleiro.");
+    }
 }
