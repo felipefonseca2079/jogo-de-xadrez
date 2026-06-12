@@ -9,3 +9,34 @@ public abstract class Peca {
         return this.nome;
     }
 }
+public class Rei extends Peca {
+    public Rei(int numero, char cor) {
+        super("K", numero, cor);
+    }
+}
+public class Rainha extends Peca {
+    public Rainha(int numero, char cor) {
+        super("Q", numero, cor);
+    }
+}
+public class Torre extends Peca {
+    public Torre(int numero, char cor) {
+        super("T", numero, cor);
+    }
+}
+public class Bispo extends Peca {
+    public Bispo(int numero, char cor) {
+        super("B", numero, cor);
+    }
+}
+public class Cavalo extends Peca {
+    public Cavalo(int numero, char cor) {
+        super("H", numero, cor);
+    }
+}
+public class Peao extends Peca {
+    public Peao(int numero, char cor) {
+        super("P", numero, cor);
+    }
+}
+
