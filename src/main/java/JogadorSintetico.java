@@ -9,3 +9,13 @@ public class JogadorSintetico extends Jogador {
         System.out.println("Jogador Sintético (" + getNome() + ") calculou e fez uma jogada.");
     }
 }
+public class JogadorSintetico extends Jogador {
+    public JogadorSintetico(String nome, char cor) {
+        super(nome, cor);
+    }
+
+    @Override
+    public boolean jogar(Tabuleiro tabuleiro, String NomeDaPeca, int numeroDaCasa) {
+        return true;
+    }
+}
