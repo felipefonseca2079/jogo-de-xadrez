@@ -22,3 +22,13 @@ public class JogadorHumano extends Jogador {
         System.out.println("Jogador Humano (" + getNome() + ") fez sua jogada no tabuleiro.");
     }
 }
+public class JogadorHumano extends Jogador {
+    public JogadorHumano(String nome, char cor) {
+        super(nome, cor);
+    }
+
+    @Override
+    public boolean jogar(Tabuleiro tabuleiro, String NomeDaPeca, int numeroDaCasa) {
+        return true;
+    }
+}
