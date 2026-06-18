@@ -17,7 +17,7 @@ public static void main(String[] args) {
             jogador2.jogar();
         }
     @Override
-    public void iniciar() {
+    public void iniciar(); {
         Tabuleiro tabuleiro = new Tabuleiro();
         Jogador jogador1 = new JogadorHumano("Humano", 'b');
         Jogador jogador2 = new JogadorSintetico("Sintetico", 'p');
