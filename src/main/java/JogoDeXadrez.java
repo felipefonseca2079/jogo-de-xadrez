@@ -4,10 +4,6 @@ public static void main(String[] args) {
         partida.iniciar();
         System.out.println("SEU NOME COMPLETO");
     }
-    public void iniciar() {
-        Tabuleiro tabuleiro = new Tabuleiro();
-        Jogador jogador1 = new JogadorHumano("Humano");
-        Jogador jogador2 = new JogadorSintetico("Sintetico");
 
         while (!tabuleiro.acabouOJogo()) {
             jogador1.jogar();
