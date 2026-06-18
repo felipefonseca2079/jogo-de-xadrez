@@ -1,4 +1,4 @@
-    }class JogoDeXadrez implements Jogo 
+class JogoDeXadrez implements Jogo {
 public static void main(String[] args) {
         JogoDeXadrez partida = new JogoDeXadrez();
         partida.iniciar();
