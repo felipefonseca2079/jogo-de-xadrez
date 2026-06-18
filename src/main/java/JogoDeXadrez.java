@@ -5,14 +5,6 @@ public static void main(String[] args) {
         System.out.println("SEU NOME COMPLETO");
     }
 
-        while (!tabuleiro.acabouOJogo()) {
-            jogador1.jogar();
-            if (tabuleiro.acabouOJogo()) {
-                break;
-            }
-            jogador2.jogar();
-        }
-    @Override
     public void iniciar() {
         Tabuleiro tabuleiro = new Tabuleiro();
         Jogador jogador1 = new JogadorHumano("Humano", 'b');
