@@ -9,19 +9,24 @@ public class Tabuleiro {
     private void inicializarTabuleiro() {
         casas[0][0] = new Torre(1, 'B'); 
         casas[0][1] = new Cavalo(1, 'B');
-    }
+   }
 
     public void mostrarTabuleiro() {
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
                 if (casas[i][j] != null) {
-                    // Agora funciona! O Java sabe que o objeto ali dentro é uma Peca
-                    System.print(casas[i][j].getNome() + " "); 
+             
+                    System.out.print(casas[i][j].getNome() + " "); 
                 } else {
-                    System.print("[ ] ");
+             
+                    System.out.print("[ ] ");
                 }
             }
-            System.println();
+            System.out.println();
         }
+    }
+
+    public boolean acabouOJogo() {
+        return false;
     }
 }
