@@ -11,7 +11,7 @@ public void verificarJogador() {
     
     assertEquals('b', cor);
 }
-    }
+    
     
     @Test 
     public void verificarTabuleiro() { // ADICIONADO: public
