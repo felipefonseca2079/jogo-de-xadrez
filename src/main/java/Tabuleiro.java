@@ -2,7 +2,6 @@ public class Tabuleiro {
 
 private String[][] casas = new String[8][8];
 
-    private Peca[][] casas;
     private int rodadas = 0;
 
     public Tabuleiro() {
