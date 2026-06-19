@@ -1,34 +1,14 @@
-public abstract class Jogador {
-    private String nome;
-
-    public Jogador(String nome) {
-        this.nome = nome;
-    }
-
-    public String getNome() {
-        return this.nome;
-    }
-
-
-    public abstract void jogar();
-}
 public class JogadorHumano extends Jogador {
-    public JogadorHumano(String nome) {
-        super(nome);
-    }
 
-    @Override
-    public void jogar() {
-        System.out.println("Jogador Humano (" + getNome() + ") fez sua jogada no tabuleiro.");
-    }
-}
-public class JogadorHumano extends Jogador {
+    // Ajustado para receber nome e cor
     public JogadorHumano(String nome, char cor) {
-        super(nome, cor);
+        super(nome, cor); 
     }
 
+    // Assinatura exata exigida pela JogadorInterface / Jogador
     @Override
-    public boolean jogar(Tabuleiro tabuleiro, String NomeDaPeca, int numeroDaCasa) {
+    public boolean jogar(Tabuleiro tabuleiro, String nomeDaPeca, int numeroDaCasa) {
+        System.out.println("Jogador Humano fez sua jogada.");
         return true;
     }
 }
