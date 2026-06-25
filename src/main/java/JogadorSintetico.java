@@ -1,10 +1,11 @@
 public class JogadorSintetico extends Jogador {
-
     public JogadorSintetico(String nome, char cor) {
         super(nome, cor);
     }
-    public boolean jogar(Tabuleiro tabuleiro, String nomeDaPeca, int numeroDaCasa) {
-        System.out.println("Jogador Sintético fez sua jogada.");
+
+    @Override
+    public boolean jogar(Tabuleiro tabuleiro, String NomeDaPeca, int numeroDaCasa) {
+        System.out.println(getNome() + " (Sintético) fez sua jogada com " + NomeDaPeca);
         return true;
     }
 }
