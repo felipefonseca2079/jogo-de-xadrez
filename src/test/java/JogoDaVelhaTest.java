@@ -1,13 +1,23 @@
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertThrows;
+import static org.junit.Assert.assertTrue;
+import org.junit.Test;
 
-// Mudado de JogoDeXadrezTest para JogoDaVelhaTest
-public class JogoDaVelhaTest {
+public class JogoDeXadrezTest {
+
+    @Test
+    public void verificarCasaLivreEOcupada() {
+        Tabuleiro tabuleiro = new Tabuleiro();
+        
+        assertTrue(tabuleiro.casaLivre("d4"));
+        
+        assertTrue(!tabuleiro.casaLivre("e1"));
+    }
 
     @Test
     public void verificarJogadorCorValida() {
         Jogador jogador = new JogadorHumano("Felipe", 'b'); 
-        assertEquals('b', CapsLockEvitado(jogador.getCor()));
+        assertTrue(jogador.getCor() == 'b');
     }
 
     @Test
@@ -22,8 +32,4 @@ public class JogoDaVelhaTest {
         Tabuleiro tabuleiro = new Tabuleiro();
         assertFalse(tabuleiro.acabouOJogo());
     }    
-
-    private char CapsLockEvitado(char c) {
-        return Character.toLowerCase(c);
-    }
 }
